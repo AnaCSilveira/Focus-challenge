@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --color-text-controls: hsl(240,6%,21%);
+    --color-cards-blue: hsl(194,97%,31%);
+    --color-card-white: hsl(0,0%,100%);
+    --color-card-grey: hsl(240,9%,89%);
+    font-size: clamp(40%, 1% + 2vw, 62.5%)
+}
+
+body {
+    background-color: var(--color-card-white) ;
+    color: var(--color-text-controls);
+    
+    height: 100vh;
+    place-content: center;
+
+}
+
+#app {
+   display: flex;
+   justify-content: center;
+   margin: 19.6rem 22.6rem 18.8rem 23.3rem;
+   
+   
+}
+
+.box-one {
+    margin-right: 19.6rem;
+    padding: 5.8rem;
+}
+
+.time {
+   
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12.6rem;
+    justify-content: center;
+    display: flex;
+    
+}
+
+#controls {
+    justify-content: center;
+    
+    margin-top: 1.7rem;
+    gap: 4rem;
+    display: flex;
+    height: 4.8rem;
+    align-items: flex-start;
+
+   
+}
+
+#controls button {
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 0;
+    background-color: transparent;
+    font-size: 5rem;
+   
+}
+
+#sounds {
+    width: 30.8rem;
+    height: 33.6rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+#sounds button {
+    margin-right: auto;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+
