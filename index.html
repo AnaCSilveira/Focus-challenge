@@ -14,29 +14,49 @@
   <body>
     <div id="app">
       <div class="box-one"><section class="time">
-          <span id="minuts">00</span>
+          <span id="minutes">00</span>
         <span>:</span>
         <span id="seconds">00</span>
       </section>
       <section id="controls">
-        <button class="ph ph-play-circle"></button></button>
-        <button class="ph ph-stop-circle"></button>
-        <button class="ph ph-plus-circle"></button>
-        <button class="ph ph-minus-circle"></button></button>
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-play-circle">
+          <span class="sr-only">iniciar timer</span>
+        </button></button>
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-stop-circle">
+          <span class="sr-only">Parar o timer</span>
+        </button>
+        <button 
+        data-action="plus"
+        class="ph ph-plus-circle">
+          <span class="sr-only">Aumentar cinco minutos</span>
+        </button>
+        <button 
+        data-action="minus"
+        class="ph ph-minus-circle">
+          <span class="sr-only">Diminuir cinco minutos</span>
+        </button></button>
       </section>
     </div>
       <section id="sounds">
-        <button>
+        <button data-action="toggleMusic">
             <img src="assets/card-one.svg" alt="">
+            <span class="sr-only">tocar som de floresta</span>
         </button>  
-        <button>
+        <button data-action="toggleMusic">
             <img src="assets/cart-two.svg" alt="">
+            <span class="sr-only">tocar som de chuva</span>
         </button> 
-        <button>
+        <button data-action="toggleMusic">
             <img src="assets/card-three.svg" alt="">
+            <span class="sr-only">tocar musica de cafeteria</span>
         </button>     
-        <button>
+        <button data-action="toggleMusic">
             <img src="assets/card-four.svg" alt="">
+            <span class="sr-only">tocar musica de lareira</span>
         </button>
       </section>
     </div>

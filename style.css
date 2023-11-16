@@ -19,6 +19,7 @@ body {
     
     height: 100vh;
     place-content: center;
+   
 
 }
 
@@ -53,7 +54,7 @@ body {
     display: flex;
     height: 4.8rem;
     align-items: flex-start;
-
+    
    
 }
 
@@ -63,7 +64,7 @@ body {
     border: 0;
     background-color: transparent;
     font-size: 5rem;
-   
+    cursor: pointer;
 }
 
 #sounds {
@@ -78,8 +79,18 @@ body {
     margin-right: auto;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
-
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    appearance: none;
+    overflow: hidden;
+    margin:  -1;
+    padding: 0;
+    border: none;
+}
 
 
