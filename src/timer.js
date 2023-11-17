@@ -1,6 +1,6 @@
 import state from "./state.js";
 import * as el from "./elements.js";
-import { plus } from "./actions.js";
+
 
 export function updateDisplay(minutes, seconds) {
   minutes = minutes ?? state.minutes;
@@ -18,19 +18,20 @@ export function countDown() {
   let minutes = Number(el.minutes.textContent);
   let seconds = Number(el.seconds.textContent);
 
-  seconds--
+  seconds--;
 
-  
-  if(seconds < 0){
-    seconds = 59
-    minutes --
+  if (seconds < 0) {
+    seconds = 59;
+    minutes--;
   }
 
-  if(minutes < 0) {
-return
+  if (minutes < 0) {
+    return;
   }
 
-    updateDisplay(minutes, seconds)
+  updateDisplay(minutes, seconds);
 
   setTimeout(() => countDown(), 1000);
+
+  
 }
