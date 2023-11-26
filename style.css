@@ -11,6 +11,7 @@
     --color-card-white: hsl(0,0%,100%);
     --color-card-grey: hsl(240,9%,89%);
     font-size: clamp(40%, 1% + 2vw, 62.5%)
+    
 }
 
 body {
@@ -72,6 +73,7 @@ body {
     height: 33.6rem;
     display: flex;
     flex-wrap: wrap;
+    
    
     
 }
@@ -80,6 +82,12 @@ body {
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    background-color: var(--color-card-grey);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    font-size: 6.4rem;
+    color: var(--color-text-controls);
 }
 
 .sr-only {
@@ -94,3 +102,6 @@ body {
 }
 
 
+#sounds button:active {
+    background-color: var(--color-cards-blue);
+}
